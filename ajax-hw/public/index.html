@@ -78,7 +78,7 @@
 		<div class="profileInfo">
 			
 			<div class="avatar"> 
-				<img src="{{ avatar_url }}"/> 
+				<img class="profileAvatar" src="{{ avatar_url }}"/> 
 			</div>
 			<div class="name"> {{ name }} </div>
 			<div class="login"> {{ login }} </div>
@@ -113,6 +113,12 @@
 				</div>
 
 			</div>
+
+			<div class="orgs">
+				<p class="organization">Organizations</p>
+				<img class="orgAvatar" src="{{ avatar_url }}" />
+			</div>
+
 		</div>
 
 	</template>
