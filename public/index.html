@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mandy6720 (Amanda Hewitt)</title>
+	<link rel="stylesheet" type="text/css" href="github.css">
+	<link rel="stylesheet" href="octicons/octicons.css">
+</head>
+<body>
+<div id="left"></div>
+
+
+<template id="userDataTemplate">
+	<img src="{{ avatar_url }}"/>
+	 
+	<h2>{{ name }}</h2>
+	<h3>{{ login }}</h3>
+	<div id="userInfo">
+		<ul>
+			<li><span class="octicon octicon-organization"></span>{{ company }}</li>
+			<li><span class="octicon octicon-location"></span> {{ location }}</li>
+			<li class="link"><span class="octicon octicon-mail"></span>{{ email }}</li>
+			<li class="link"><span class="octicon octicon-link"></span>{{ blog }}</li>
+			<li><span class="octicon octicon-clock"></span>Joined on {{ created_at }}</li>
+		</ul>
+	</div>
+</template>
+
+<div id="main"></div>
+
+<template id="userRepoTemplate">
+	<div class="repo">
+	    <h3 class="repoTitle link">{{name}}</h3>
+	    <div class="repoStats">
+		    {{language}}
+		    <span class="octicon octicon-star"></span>{{stargazers_count}}
+		    <span class="octicon octicon-git-branch"></span>{{forks}}
+	    </div>
+	    <p>Updated {{updated_at}}</p>
+	</div>
+</template>
+
+
+	<script type="text/javascript" src="libs/jquery.js"></script>
+	<script type="text/javascript" src="libs/underscore.js"></script>
+	<script type="text/javascript" src="libs/handlebars-v3.0.3.js"></script>
+	<script type="text/javascript" src="libs/moment.js"></script>
+	<script type="text/javascript" src="github.js"></script>
+</body>
+</html>

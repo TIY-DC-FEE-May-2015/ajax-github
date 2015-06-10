@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+}
+/* -------- Left Sidebar ---------- */
+#left {
+	display: inline-block;
+	width: 20%;
+	margin-left: 15%;
+	float: left;
+	margin-top: 5%;
+}
+#left img {
+	width: 230px;
+	height: 230px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+#left h3 {
+	font-weight: lighter;
+	color: #999;
+	padding-bottom: 18px;
+	border-bottom: 1px solid #eee;
+	width: 90%;
+}
+#userInfo {
+	padding: 12px 0px;
+}
+#userInfo li {
+	list-style-type: none;
+	line-height: 1.7;
+	font-size: 14px;
+}
+#userInfo .octicon {
+	color: #CCCCCC;
+	padding-right: 10px;
+}
+/* ---------- Repos --------------- */
+#main {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	margin-top: 5%;
+}
+.repo {
+	padding: 30px 10px;
+	border-top: 1px solid #EEEEEE;
+}
+.repoTitle {
+	display: inline-block;
+	padding-bottom: 10px;
+}
+.link {
+	color: #4078C0;
+}
+.repoStats {
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+	font-size: 12px;
+	color: #888888;
+}
+.repoStats .octicon {
+	margin-left: 5px;
+	margin-right: 3px;
+}
