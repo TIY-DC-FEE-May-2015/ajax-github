@@ -56,6 +56,21 @@ body {
 	font-weight: bold;
 	font-size: 30px;
 }
+#orgs {
+	margin-top: 20px;
+	border-top: 1px solid #eee;
+	width: 90%;
+	padding-top: 20px;
+}
+#orgs img {
+	width: 45px;
+	height: 45px;
+}
+#orgs h3 {
+	font-weight: bold;
+	color: #000;
+	border: none;
+}
 /* ---------- Repos --------------- */
 #main {
 	display: inline-block;
