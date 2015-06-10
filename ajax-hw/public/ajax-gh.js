@@ -12,6 +12,8 @@ $(document).on('ready', function() {
 	  },
 	  success: function(data) {
 
+	  	console.log(data)
+
 	  	data.created_at = moment(data.created_at).format("MMM Do YY")
 
 	  	$(".profile").append(profileTempFunction(data))
@@ -43,5 +45,21 @@ $(document).on('ready', function() {
 	  }
 	})
 
+// Hard mode
 
+	var starTempFunction = Handlebars.compile( $("#ghRepoTemplate").html() )
+
+	$.ajax({ 
+	  url: "https://api.github.com/users/ghaea/starred",
+	  method: "GET",
+	  data: {
+	    access_token: "3b2e77f921315bbd9d39a0ec8267ff75107c7aff"
+	  },
+	  success: function(data) { 
+	  	console.log(data)
+	  		
+	  	$("#starred").text(data.length.toString())
+  	
+	  }
+	})
 })
