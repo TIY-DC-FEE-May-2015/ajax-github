@@ -12,11 +12,22 @@ $(document).on("ready", function() {
 	    access_token: "4be98d353a87891a63815878c1d74215bb72af55"
 	  },
 	  success: function(data) {
-	  	console.log(data.created_at, moment(data.created_at))
 	  	data.created_at = moment(data.created_at).format('MMM DD YYYY');
-
 	  	var htmlString = template(data);
 	  	 $("#left").append(htmlString)
+	  }
+	})
+
+	$.ajax({
+	  url: "https://api.github.com/users/mandy6720/starred",
+	  method: "GET",
+	  data: {
+	    access_token: "4be98d353a87891a63815878c1d74215bb72af55"
+	  },
+	  success: function(data) {
+	  	console.log(data)
+		$("#starText").text(data.length.toString());
+
 	  }
 	})
 

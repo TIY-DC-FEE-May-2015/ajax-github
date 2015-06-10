@@ -23,6 +23,18 @@
 			<li><span class="octicon octicon-clock"></span>Joined on {{ created_at }}</li>
 		</ul>
 	</div>
+	<div class="userStats">
+		<span class="link">{{ followers }}</span>
+		<p>Followers</p>
+	</div>
+	<div id="star" class="userStats">
+		<span id="starText" class="link"></span>
+		<p>Starred</p>
+	</div>
+	<div class="userStats">
+		<span class="link">{{ following }}</span>
+		<p>Following</p>
+	</div>
 </template>
 
 <div id="main"></div>
