@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="github-assn.css"/>
+</head>
+<body>
+<div class="container">
+	<div id="left-side"></div>
+	<div id="right-side"></div>
+</div>
+
+ <template id="repoTemplate">
+  <div class = "repo">
+      <img class="ava" src="{{ avatar_url}}"/>
+      <div class="myname">{{name}}</div>
+      <div class="login">{{login}}</div>
+      <ul class = "githublist">
+          <li class="gitlist">
+            <span><img src="assets/location.jpg" class="locatepic"/></span>
+            <span class="locate" class="line"> {{location}}</span>
+          </li>
+          <li class="gitlist">
+            <span><img src="assets/mail.jpg"/></span>
+            <span class="email" class="line">{{email}}</span>
+          </li>
+          <li class="gitlist">
+            <span> <img src ="assets/update.jpg"/> </span>
+            <span class= "createTime" class="line">{{ created_at }}</span>
+          </li>
+      </ul>
+      </div>
+  </div>
+  </template>
+
+<template id= "rigSide">
+  <div class= "rightside">
+  <ul class = "repoList">
+    <a href="#" class="name">{{name}}</a>
+      <div class="firstline">
+        <span class= "language">{{ language }}</span>
+        <span class= "stargazers_count"><img src ="assets/stars.jpg"/>{{stargazers_count }}</span>
+        <span class= "forks"><img src ="assets/fork.jpg"/>{{forks}}</span>
+      </div>
+    <div class= "forked_from">forked from </div>  
+    <div class= "description">{{ description }}</div> 
+    <div class= "created_at">{{ created_at }}</div>
+  </li>
+</template>
+
+<script type="text/javascript" src="libs/underscore.js"></script>
+  <script type="text/javascript" src="libs/handlebars.js"></script>
+  <script type="text/javascript" src="libs/jquery.js"></script>
+  <script type="text/javascript" src="github-assn.js"></script>
+</body>
+</html>
