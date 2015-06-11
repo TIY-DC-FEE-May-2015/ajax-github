@@ -1,0 +1,101 @@
+
+.container{
+ height: 100vh;
+ 
+}
+#right{
+	position: relative;
+	left: 480px;
+	display: block;
+	width: 80%;
+	height:100vh;
+	bottom: 550px;
+	vertical-align: top;
+	
+}
+.title{
+	font-size: 20px;
+	color:#3C7ABB;
+	font-weight: bold;
+	position: relative;
+	margin-left: 60px;
+	margin-top: 50px;
+}
+.description{
+	font-weight: bold;
+	font-size: 12px;
+	margin-left: 60px;
+}
+.updated{
+	color:#888888;
+	padding: 10px;
+	margin-left: 60px;
+}
+.language{
+	color:#888888;
+	position: relative;
+	left: 620px;
+	bottom: 122px;
+
+}
+.stars{
+	color: red;
+	position: relative;
+	left:750px;
+	bottom:102px;
+
+}
+.fork{
+	color:green;
+	position: relative;
+	left:790px;
+	bottom:26px;
+}
+img{
+	height: 70vh;
+}
+.name{
+	font-size: 40px;
+	font-weight: bold;
+}
+.username{
+   color:#888888;
+   font-size:30px;
+   border-bottom: solid 1px #888888;
+   padding: 16px;
+   margin-top: -12px;
+   width:33%;
+}
+.followers{
+	color:#3C7ABB;
+	font-size: 37px;
+	position: relative;
+	top: 82px;
+	left: 50px;
+
+}
+.following{
+	color:#3C7ABB;
+	font-size: 37px;
+	position: relative;
+	left: 130px;
+	top: 40px;
+}
+.location{
+	margin-left: 30px;
+	position: relative;
+	left: 25px;
+	top: 30px; 
+}
+.email{
+	padding: 5px;
+	position: relative;
+	left: 25px;
+	top: 30px; 
+}
+.createDate{
+	padding: 5px;
+	position: relative;
+	left: 25px;
+	top:30px;
+}

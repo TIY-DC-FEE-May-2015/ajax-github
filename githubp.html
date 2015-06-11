@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="githubb.css">
+	<link rel="stylesheet" href="/octicons/octicons.css">
+</head>
+<body>
+    <div class="container">
+    	<div id="left"></div>
+    	<div id="right"></div>
+    </div>
+
+<template id= "left-side">
+    <img  class="avatar_url" src= "{{ avatar_url }}" />
+	<div class="name">{{ name }}</div>
+	<div class="username">{{ login }}</div>
+	<div class="location">{{ location }}</div>
+	<div class="email">{{ email }}</div>
+	<div class="createDate">{{ created_at }}</div>
+	<div class="followers">{{ followers }}</div>
+	<div class="starred">{{ stargazers_count }}</div>
+	<div class="following">{{ following}}</div>
+
+</template>
+<template id = "right-side"> 
+
+  <div class= "title">{{ name }}</div>
+  <div class= "fork">{{ forks }}</div>
+  <a href="#"></a>
+  <div class= "description">{{ description }}</div>
+  <div class= "updated">{{ updated_at }}</div>
+  <div class= "stars">{{ stargazers_count}}</div>
+  <div class= "language">{{ language }}</div>
+
+</template>
+
+
+
+
+
+
+
+
+<script src="libs/jquery.js"></script>
+<script src="libs/underscore.js"></script>
+<script src="libs/handlebars-v3.0.3.js"></script>
+<script src="libs/moment.js"></script>
+<script src="githubp.js"></script>
+</body>
+</html>
