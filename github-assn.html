@@ -26,12 +26,29 @@
           </li>
           <li class="gitlist">
             <span> <img src ="assets/update.jpg"/> </span>
-            <span class= "createTime" class="line">{{ created_at }}</span>
+            <span class= "createTime" class="line"> Joined on {{ created_at }}</span>
           </li>
       </ul>
+      <div class= "stats">
+        <span class="bigStats">{{followers}}</span> 
+        <span class="bigStats" id="starred"></span>
+        <span class="bigStats">{{following}}</span>
+          <div class ="statWords">
+            <span>Followers</span>
+            <span>Starred</span>
+            <span>Following</span>
+          <div>
       </div>
   </div>
   </template>
+
+<template id= "Organizations">
+  <div class="orgs">
+       <p class="organiz">            Organizations</p>
+       <img class="orgAvatar"  
+          src="{{ avatar_url }}" />
+     </div>
+</template>
 
 <template id= "rigSide">
   <div class= "rightside">
@@ -42,13 +59,19 @@
         <span class= "stargazers_count"><img src ="assets/stars.jpg"/>{{stargazers_count }}</span>
         <span class= "forks"><img src ="assets/fork.jpg"/>{{forks}}</span>
       </div>
-    <div class= "forked_from">forked from </div>  
+    <div class= "forked_from"><img src ="assets/forked.jpg"/>forked from {{repos_url}}</div>  
     <div class= "description">{{ description }}</div> 
-    <div class= "created_at">{{ created_at }}</div>
+    <div class= "updated_at"> Updated {{created_at}}</div>
   </li>
 </template>
 
-<script type="text/javascript" src="libs/underscore.js"></script>
+<template id="organizList">
+  <div class= "orgs"></div>
+
+
+</template>
+  <script type="text/javascript" src="libs/moment.js"></script>
+  <script type="text/javascript" src="libs/underscore.js"></script>
   <script type="text/javascript" src="libs/handlebars.js"></script>
   <script type="text/javascript" src="libs/jquery.js"></script>
   <script type="text/javascript" src="github-assn.js"></script>

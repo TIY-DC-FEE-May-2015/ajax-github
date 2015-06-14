@@ -4,6 +4,8 @@
 	box-sizing: border-box;
 }
 
+
+
 /* Left Side */
 
 #left-side {
@@ -28,8 +30,7 @@
 .login {
 	width: 250px;
 	font-size: 20px;
-	font-weight: 300px;
-	font-style: normal;
+	font-weight: lighter;
 	color: #666;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #DDDDDD;
@@ -52,14 +53,61 @@
 }
 
 .line {
-	line-height: 26px;
-	vertical-align: top;
+
 }
 
 .gitlist {
-	font-size: 14px;
+	line-height: 26px;
 }
 
+.gitlist img {
+	
+}
+
+.stats {
+	color:#4078c0;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 15px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.bigStats {
+	padding-left: 20px;
+	padding-right: 20px;
+
+
+}
+
+.statWords {
+	font-size: 11px;
+	color: black;
+	font-weight: normal;
+	padding-bottom: 20px;
+
+}
+.statWords span {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*Organizations*/
+.orgs {
+	float: left;
+	top: 65%;
+	margin-top: 25px;
+}
+
+.orgAvatar {
+	height: 42px;
+	width: 42px;
+}
+
+.organiz {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
 /*Repo Right Side */
 #right-side {
 	margin-top: 100px:;
@@ -102,19 +150,25 @@ a {
 }
 
 .forked_from {
-	font-size: 12px;
+	font-size: 13px;
 	margin-top: 8px;
 	color: #888;
+	vertical-align: middle;
 }
+.forked_from img{
+	height: 15px;
+}
+
+
 
 .description {
 	font-size: 14px;
-	color: #666;
+	color:#666666;
 	margin-top: 8px;
 }
 
 .updated_at {
-	font-size: 12px;
+	font-size: 14px;
 	margin-top: 8px;
 	color: #888;
 }
