@@ -2,7 +2,7 @@
 
 ### Description
 
-This project uses AJAX, APIs, and Underscore templating to take data from GitHub's API and recreate my profile's "Repositories" page using HTML AND CSS. 
+This project uses AJAX, APIs, and Underscore templating to take data from GitHub's API and recreate my profile's "Repositories" page using HTML and CSS. 
 
 
 The user data in the left column includes the following:
