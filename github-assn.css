@@ -1,0 +1,178 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+
+/* Left Side */
+
+#left-side {
+	margin-top: 30px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10%;
+	margin-right: 20px;
+	text-align: left;
+	width: 250px;
+	font-family: Helvetica;
+
+}
+
+.myname {
+	font-size: 30px;
+	display: inline-block;
+	font-weight: bold;
+	
+}
+
+.login {
+	width: 250px;
+	font-size: 20px;
+	font-weight: lighter;
+	color: #666;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #DDDDDD;
+	line-height: 24px;
+}
+
+.ava {
+	height: 230px;
+	width: 230px;
+}
+
+.githublist {
+	list-style: none;
+	font-size: 16px;
+	margin-top: 15px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #DDDDDD;
+	vertical-align: top;
+
+}
+
+.line {
+
+}
+
+.gitlist {
+	line-height: 26px;
+}
+
+.gitlist img {
+	
+}
+
+.stats {
+	color:#4078c0;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 15px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.bigStats {
+	padding-left: 20px;
+	padding-right: 20px;
+
+
+}
+
+.statWords {
+	font-size: 11px;
+	color: black;
+	font-weight: normal;
+	padding-bottom: 20px;
+
+}
+.statWords span {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*Organizations*/
+.orgs {
+	float: left;
+	top: 65%;
+	margin-top: 25px;
+}
+
+.orgAvatar {
+	height: 42px;
+	width: 42px;
+}
+
+.organiz {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+/*Repo Right Side */
+#right-side {
+	margin-top: 100px:;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	width: 730px;
+	font-family: Helvetica;
+}
+
+.repoList {
+	border-bottom: 1px solid #DDDDDD;
+	padding: 30px 0px;
+	font-size: 18px;
+}
+
+a {
+	font-weight: bold;
+	font-size: 20px;
+	color: #4078c0;
+	text-decoration: none;
+
+}
+.language {
+	font-size: 12px;
+	color: #888;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.stargazers_count, .forks {
+	font-size: 12px;
+	color: #888;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.firstline {
+	float: right;
+}
+
+.forked_from {
+	font-size: 13px;
+	margin-top: 8px;
+	color: #888;
+	vertical-align: middle;
+}
+.forked_from img{
+	height: 15px;
+}
+
+
+
+.description {
+	font-size: 14px;
+	color:#666666;
+	margin-top: 8px;
+}
+
+.updated_at {
+	font-size: 14px;
+	margin-top: 8px;
+	color: #888;
+}
+
+img {
+	vertical-align: bottom;
+}
